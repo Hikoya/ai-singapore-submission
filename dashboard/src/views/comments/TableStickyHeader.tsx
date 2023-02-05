@@ -14,7 +14,7 @@ import { Review } from 'types/review'
 import LoadingModal from 'src/components/LoadingModal'
 
 interface Column {
-  id: 'visit_date' | 'review_title' | 'review_desc' | 'review_rating'
+  id: 'visit_date' | 'review_title' | 'review_desc'
   label: string
   minWidth?: number
   align?: 'right'
@@ -25,20 +25,12 @@ const columns: readonly Column[] = [
   { id: 'visit_date', label: 'Visit Date', minWidth: 170 },
   { id: 'review_title', label: 'Review Title', minWidth: 170 },
   { id: 'review_desc', label: 'Description', minWidth: 170 },
-  {
-    id: 'review_rating',
-    label: 'Score',
-    minWidth: 170,
-    align: 'right',
-    format: (value: number) => value.toLocaleString('en-US')
-  }
 ]
 
 interface Data {
   visit_date: string
   review_title: string
   review_desc: string
-  review_rating: number
 }
 
 const TableStickyHeader = () => {
