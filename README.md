@@ -29,7 +29,8 @@ and detected the sentiment in a given input based on the provided aspects, allow
 # Try out our model and dashboard
 
 1. Download "dashboard" and "model" repositories
-2. Run "model" repository by running python app/main.py
+2. Run "model" repository by running `python app/main.py`
 3. Launch a mysql server and copy the url to a .env file (A sample .env file is given for reference, filled with dummy variables)
-4. Populate the .env file with secrets eg. NEXTAUTH_SECRET , DATABASE_URL. Populate the NEXT_PUBLIC_PREDICT_URL and NEXT_PUBLIC_CLOUD_URL with the url from python backend
-5. Run the dashboard by running npm run dev
+4. Populate the .env file with secrets eg. NEXTAUTH_SECRET , DATABASE_URL. 
+5. Populate the NEXT_PUBLIC_PREDICT_URL and NEXT_PUBLIC_CLOUD_URL with the url from python backend
+6. Run the dashboard by running `npm run dev`
