@@ -25,3 +25,11 @@ the top 5 most common aspects that were both in the input and the word frequency
 own unique aspects.
 4. We then determined whether each aspect of a review is positive, negative or neutral. To do this, we used the Sentic-GCN model, 
 and detected the sentiment in a given input based on the provided aspects, allowing for more fine-grained and targeted analysis.
+
+# Try out our model and dashboard
+
+1. Download "dashboard" and "model" repositories
+2. Run "model" repository by running python app/main.py
+3. Launch a mysql server and copy the url to a .env file (A sample .env file is given for reference, filled with dummy variables)
+4. Populate the .env file with secrets eg. NEXTAUTH_SECRET , DATABASE_URL. Populate the NEXT_PUBLIC_PREDICT_URL and NEXT_PUBLIC_CLOUD_URL with the url from python backend
+5. Run the dashboard by running npm run dev
